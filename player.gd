@@ -36,7 +36,10 @@ func control():
 
 
 func animation_manager():
-	pass
+	print(vel)
+	if (vel.x > 10 or vel.x < -10) or (vel.y > 10 or vel.y < -10):
+		$Sprite.play("walk")
+	else:	$Sprite.play("idle")
 
 
 func _on_foot_body_entered(body):
