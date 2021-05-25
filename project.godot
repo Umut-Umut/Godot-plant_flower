@@ -1,0 +1,32 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="farm"
+run/main_scene="res://world.tscn"
+config/icon="res://icon.png"
+
+[layer_names]
+
+2d_physics/layer_1="player"
+2d_physics/layer_2="foot"
+2d_physics/layer_3="grass"
+2d_physics/layer_4="soil"
+2d_physics/layer_5="plantable"
+2d_physics/layer_6="plant"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
